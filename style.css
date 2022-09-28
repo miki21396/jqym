@@ -1,10 +1,104 @@
-h1{
-font-size: 30px;
-font-weight: bold;
-margin: 30px;
-text-align: center;
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px;
+    text-align: center;
+    font-family: Georgia, serif;
 }
 
-.header-menu{
+.header-menu {
+    text-align: center;
+    margin: 20px;
+
+}
+
+/* アイコンサイズ変更 */
+.icons {
+    width: 20px;
+    height: 20px;
+}
+
+/* トグルメニュー */
+/* .toggle-menu dt {
+    margin: 0 auto;
+    width: 80px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .toggle-menu > dd {
+    display: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 80px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .toggle-menu dd + dd {
+    border-top: none;
+  } */
+
+/* ここまで */
+
+.content {
+    width: 350px;
+    margin-left: 15px;
+}
+
+.wrap {
+    display: flex;
+    overflow: hidden;
+}
+
+.slideshow {
+    display: flex;
+    animation: loop-slide 20s infinite linear 1s both;
+}
+
+@keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.slide-paused:hover .slideshow {
+    animation-play-state: paused;
+}
+
+/* 参考　https://pengi-n.co.jp/blog/horizontal-slideshow/ */
+
+/* contents */
+
+.main-contents {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.left-menu {
+    background-color: lightgreen;
+    
+    width: 500px;
+    height: 700px;
+}
+
+.right-menu {
+    background-color: lightcyan;
+    width: 350px;
+    height: 700px;
+}
+
+/* footer */
+
+footer{
+    background-color: lightblue;
+    height: 30px;
     text-align: center;
 }
