@@ -6,7 +6,7 @@ h1 {
     font-family: Georgia, serif;
 }
 
-.firsticon{
+.firsticon {
     width: 25px;
     height: 25px;
 }
@@ -21,6 +21,7 @@ h1 {
 .icons {
     width: 20px;
     height: 20px;
+    margin-left: 5px;
 }
 
 /* トグルメニュー */
@@ -79,6 +80,12 @@ h1 {
 
 /* 参考　https://pengi-n.co.jp/blog/horizontal-slideshow/ */
 
+/* MENU */
+.tab-list {
+    justify-content: center;
+
+}
+
 /* contents */
 
 .main-contents {
@@ -88,8 +95,6 @@ h1 {
 }
 
 .left-menu {
-    background-color: lightgreen;
-    
     width: 60%;
     height: 700px;
 }
@@ -100,56 +105,123 @@ h1 {
     height: 700px;
 }
 
-/* Q&A */
-
-.qa{
-margin: 20px;
+/* left-content */
+.tab-list {
+    display: flex;
 }
 
-.question,.answer{
+.tab-list li {
+    /* border-top-right-radius: 5px;
+    border-top-left-radius: 5px; */
+    margin-left: 5px;
+}
+
+.tab-list li:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.box::after {
+    /* content: 'コンテンツ内容'; */
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#box1 {
+    content: 'box1';
+    color: black;
+}
+
+#box2 {
+    border: solid black 1px;
+}
+
+#box3 {
+    border: solid black 1px;
+
+}
+
+#box4 {
+    border: solid black 1px;
+
+}
+
+.current {
+    z-index: 1;
+    opacity: 1;
+    border: solid black 1px;
+}
+
+
+/* Q&A */
+
+.qa {
+    margin: 20px;
+}
+
+.question,
+.answer {
     padding: 10px;
     background-color: lightblue;
     /* border: solid 1px; */
-  }
-  
-  .question{
+}
+
+.question {
     position: relative;
     cursor: pointer;
-  }
-  
-  .question::after,.question::before{
+}
+
+.question::after,
+.question::before {
     content: '';
     display: block;
     position: absolute;
-  }
-  
-  .question::after{
+}
+
+.question::after {
     width: 20px;
     height: 2px;
     right: 10px;
     top: 50%;
-  }
-  
-  .question::before{
+}
+
+.question::before {
     width: 2px;
     height: 20px;
     right: 19px;
     top: 30%;
-  }
-  
-  .question.on::before{
+}
+
+.question.on::before {
     display: none;
-  }
-  
-  .answer{
+}
+
+.answer {
     display: none;
     background-color: white;
-  }
-  
+}
+
 
 /* footer */
 
-footer{
+footer {
     background-color: lightblue;
     height: 30px;
     text-align: center;

@@ -4,7 +4,7 @@
 //       .slideToggle();
 //   });
 
-
+// slider
 // $('.slider').slick({
 //     arrows: false,//左右の矢印はなし
 //     autoplay: true,//自動的に動き出すか。初期値はfalse。
@@ -32,13 +32,17 @@
 // ]
 // });
 
+// left-content
+
+$('.tab-list li').on('click',function () {
+    let target = $(this).attr('id');
+    $('.box').removeClass('current');
+    $(target).addClass('current');
+  })
+
 // Q&A
 
-// ①questionが押されたら、押されたものの次の兄弟をslideToggleする。
-// ②押された要素にも'on'クラスを付ける
 $('.question').on('click',function () {
     $(this).next() .slideToggle();
-    //👆クリックした次の要素を表示させる
     $(this).toggleClass('on');
-    //右側にある＋マークをマイナス表示にさせる
 })
