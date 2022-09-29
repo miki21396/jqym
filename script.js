@@ -40,6 +40,8 @@ $('.tab-list li').on('click', function () {
     $(target).addClass('current');
 })
 
+
+
 // Q&A
 
 $('.question').on('click', function () {

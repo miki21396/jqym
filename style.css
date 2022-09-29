@@ -4,10 +4,15 @@ body {
     background-attachment: fixed;
 }
 
+header{
+    background-image: url(./pic/IMG_0257.JPG);
+    margin-top: 20px;
+}
+
 h1 {
     font-size: 30px;
     font-weight: bold;
-    margin: 30px;
+    /* margin: 30px; */
     text-align: center;
     font-family: Georgia, serif;
 }
@@ -132,6 +137,9 @@ h1 {
 /* left-content */
 .tab-list {
     display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    margin: auto 25%;
 }
 
 .tab-list li {
