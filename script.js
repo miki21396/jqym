@@ -34,15 +34,15 @@
 
 // left-content
 
-$('.tab-list li').on('click',function () {
+$('.tab-list li').on('click', function () {
     let target = $(this).attr('id');
     $('.box').removeClass('current');
     $(target).addClass('current');
-  })
+})
 
 // Q&A
 
-$('.question').on('click',function () {
-    $(this).next() .slideToggle();
+$('.question').on('click', function () {
+    $(this).next().slideToggle();
     $(this).toggleClass('on');
 })

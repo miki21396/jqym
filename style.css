@@ -1,3 +1,9 @@
+body {
+    font-family: 游明朝体;
+    /* background-image: url(./pic/IMG_0257.JPG); */
+    background-attachment: fixed;
+}
+
 h1 {
     font-size: 30px;
     font-weight: bold;
@@ -50,8 +56,10 @@ h1 {
 /* ここまで */
 
 .content {
-    width: 350px;
+    width: 368px;
     margin-left: 15px;
+    height: 195.26px;
+
 }
 
 .wrap {
@@ -79,6 +87,22 @@ h1 {
 }
 
 /* 参考　https://pengi-n.co.jp/blog/horizontal-slideshow/ */
+
+.content-hover {
+    border: 1px solid #ddd;
+    margin: 20px auto 0;
+    transition-duration: 0.5s;
+}
+
+.content-hover img {
+    width: 100%;
+}
+
+.content-hover:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+}
 
 /* MENU */
 .tab-list {
@@ -123,8 +147,9 @@ h1 {
 
 .container {
     width: 100%;
-    height: 600px;
+    height: 700px;
     position: relative;
+    text-align: center;
 }
 
 .box {
@@ -146,22 +171,63 @@ h1 {
 
 #box1 {
     content: 'box1';
-    color: black;
 }
 
-#box2 {
-    border: solid black 1px;
-}
+#box2 {}
 
 #box3 {
-    border: solid black 1px;
+    /* room */
 
 }
 
-#box4 {
-    border: solid black 1px;
+#box4 {}
 
+/* contact */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
 }
+
+input {
+    border: 1px solid black;
+    margin: 6px;
+    border-radius: 6px;
+}
+
+.form3 {
+    width: 280px;
+    height: 150px;
+    border: solid 1px;
+}
+
+.dropdown {
+    border: 1px solid black;
+    margin: 6px;
+}
+
+.text,
+textarea,
+.dropdown {
+    border: 0px;
+    padding: 8px;
+    border: 1px solid;
+    /* color: #000;
+    background: #F5F5F5; */
+    border-radius: 6px;
+    /* -webkit-box-shadow: 2px 3px 2px #000;
+    -moz-box-shadow: 2px 3px 2px #000; */
+}
+
+.pochi {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* contact　ここまで */
 
 .current {
     z-index: 1;
