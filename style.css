@@ -6,6 +6,11 @@ h1 {
     font-family: Georgia, serif;
 }
 
+.firsticon{
+    width: 25px;
+    height: 25px;
+}
+
 .header-menu {
     text-align: center;
     margin: 20px;
@@ -85,15 +90,62 @@ h1 {
 .left-menu {
     background-color: lightgreen;
     
-    width: 500px;
+    width: 60%;
     height: 700px;
 }
 
 .right-menu {
     background-color: lightcyan;
-    width: 350px;
+    width: 35%;
     height: 700px;
 }
+
+/* Q&A */
+
+.qa{
+margin: 20px;
+}
+
+.question,.answer{
+    padding: 10px;
+    background-color: lightblue;
+    /* border: solid 1px; */
+  }
+  
+  .question{
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .question::after,.question::before{
+    content: '';
+    display: block;
+    position: absolute;
+  }
+  
+  .question::after{
+    width: 20px;
+    height: 2px;
+    right: 10px;
+    top: 50%;
+  }
+  
+  .question::before{
+    width: 2px;
+    height: 20px;
+    right: 19px;
+    top: 30%;
+  }
+  
+  .question.on::before{
+    display: none;
+  }
+  
+  .answer{
+    display: none;
+    background-color: white;
+  }
+  
 
 /* footer */
 
