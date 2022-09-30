@@ -219,9 +219,7 @@ h1 {
   a{
     text-decoration: none;
   }
-  body{
-    margin: 20px;
-  }
+
   
   
 .title1{
@@ -382,7 +380,7 @@ textarea,
 /* footer */
 
 footer {
-    background-color: rgb(240, 212, 160);
+    background-image: url(./pic/IMG_0257.JPG);
     height: 30px;
     text-align: center;
 }
