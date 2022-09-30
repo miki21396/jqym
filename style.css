@@ -1,5 +1,5 @@
 body {
-    font-family: 游明朝体;
+    font-family: '游明朝体','ヒラギノ明朝 Pro W3,Hiragino Mincho Pro';
     /* background-image: url(./pic/IMG_0257.JPG); */
     background-attachment: fixed;
 }
@@ -152,6 +152,78 @@ h1 {
     content: 'box1';
 }
 
+/* ニュース */
+.news-list{
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+  }
+  .news-list .item a{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #CCC;
+    padding: 20px 20px;
+  }
+  .news-list .item:first-child a{
+    border-top: 1px solid #CCC;
+  }
+  .news-list .item .date{
+    margin: 0;
+    min-width: 140px;
+    font-size: 16px;
+    color: #999;
+    padding: 0 20px 0 0;
+  }
+  .news-list .item .category{
+    margin: 0;
+    min-width: 140px;
+    padding: 0 20px 0 0;
+  }
+  .news-list .item .category span{
+    background: #999;
+    color: #FFF;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 12px;
+    line-height: 1;
+  }
+  .news-list .item .title{
+    margin: 0;
+    width: 100%;
+  }
+  .news-list .item a:hover .title{
+    color: rgb(235, 223, 186);
+  }
+  
+  @media screen and (max-width: 767px){
+  .news-list .item a{
+    flex-wrap: wrap;
+  }
+  .news-list .item .date{
+    min-width: 100px;
+  }
+  .news-list .item .title{
+    margin-top: 10px;
+  }
+  }
+  
+  /* 装飾 */
+   
+  *{
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+  }
+  body{
+    margin: 20px;
+  }
+  
+  
 .title1{
     font-family: cursive;
     font-size: 30px;
@@ -249,7 +321,7 @@ textarea,
 .current {
     z-index: 1;
     opacity: 1;
-    border: solid black 1px;
+    /* border: solid black 1px; */
 }
 
 
@@ -257,6 +329,11 @@ textarea,
 
 .qa {
     margin: 20px;
+}
+
+.qatext{
+    text-align: center;
+    font-size: 20px;
 }
 
 .question,
