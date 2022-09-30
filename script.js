@@ -40,7 +40,10 @@ $('.tab-list li').on('click', function () {
     $(target).addClass('current');
 })
 
-
+// righ-content
+$(function(){
+    $('#datepicker').datepicker();
+});
 
 // Q&A
 

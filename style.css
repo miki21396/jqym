@@ -129,10 +129,11 @@ h1 {
 }
 
 .right-menu {
-    background-color: lightcyan;
+    /* background-color: lightgray; */
     width: 35%;
     height: 700px;
 }
+
 
 /* left-content */
 .tab-list {

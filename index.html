@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/1134e22465.js" crossorigin="anonymous"></script>
     <title>【非公式】ザ•ブセナテラス</title>
 </head>
 
@@ -111,7 +113,49 @@
                 </div>
             </section>
         </div>
-        <div class="right-menu"></div>
+
+        <!-- right-menu -->
+        <div class="right-menu">
+            <div class="check">
+                <span>チェックイン日</span>
+                <i class="fa-regular fa-calendar-days"></i>
+                <input type="text" id="datepicker">
+            </div>
+
+            <div class="lodging">
+                <span>泊数</span>
+                <select class="dropdown">
+                    <option>1泊▼</option>
+                    <option>2泊</option>
+                    <option>3泊</option>
+                    <option>4泊</option>
+                    <option>5泊</option>
+                </select>
+            </div>
+
+            <div class="room">
+                <span>部屋数</span>
+                <select class="dropdown">
+                    <option>1部屋▼</option>
+                    <option>2部屋</option>
+                    <option>3部屋</option>
+                </select>
+            </div>
+
+            <div class="people">
+                <span>人数（１部屋あたり）</span>
+                <select class="dropdown">
+                    <option>1人▼</option>
+                    <option>2人</option>
+                    <option>3人</option>
+                </select>
+            </div>
+
+            <input type="button" value="検索">
+            <p>※6歳以上のお子様は大人と同じ料金となりますので、「人数」に含めてご入力ください。
+                【12歳まで添寝無料】ファミリープランもご用意しております。</p>
+
+        </div>
     </div>
 
     <section>
@@ -128,8 +172,11 @@
     </section>
     <!-- footer -->
     <footer><small> &copy; THE TERRACE HOTELS CO.,LTD. All Rights Reserved.</small> </footer>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <script src="./script.js"></script>
 </body>
 
