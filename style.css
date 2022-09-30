@@ -170,12 +170,26 @@ h1 {
 
 }
 
-.subtitle{
+.c-marker{
     /* font-family: cursive; */
-
 font-size: 30px;
 font-style: italic;
 }
+
+/*　マーカー */
+.c-marker {
+    background: -webkit-linear-gradient(left, rgb(235, 223, 186) 50%, transparent 50%);
+    background: -moz-linear-gradient(left, rgb(235, 223, 186) 50%, transparent 50%);
+    background: linear-gradient(left, rgb(235, 223, 186) 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: 200% .8em; 
+    background-position: 100% .5em;
+    transition: 2s;
+}
+.c-marker.is-active{
+    background-position: 0% .5em;
+}
+/* ここまで */
 
 .anivpic{
 width: 80%;
