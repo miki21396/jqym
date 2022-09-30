@@ -40,7 +40,9 @@ $('.tab-list li').on('click', function () {
     $(target).addClass('current');
 })
 
-
+$('.pochi').on('click',function () {
+    console.log('#box5');
+})
 
 // Q&A
 

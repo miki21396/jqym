@@ -35,31 +35,6 @@ h1 {
     margin-left: 5px;
 }
 
-/* トグルメニュー */
-/* .toggle-menu dt {
-    margin: 0 auto;
-    width: 80px;
-    line-height: 40px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .toggle-menu > dd {
-    display: none;
-    margin: 0 auto;
-    box-sizing: border-box;
-    width: 80px;
-    line-height: 40px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .toggle-menu dd + dd {
-    border-top: none;
-  } */
-
-/* ここまで */
-
 .content {
     width: 368px;
     margin-left: 15px;
@@ -181,6 +156,18 @@ h1 {
     content: 'box1';
 }
 
+.title1{
+    font-family: cursive;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.subtitle{
+font-size: 20px;
+font-style: italic;
+
+}
+
 #box2 {}
 
 #box3 {
@@ -235,6 +222,8 @@ textarea,
     cursor: pointer;
 }
 
+
+
 /* contact　ここまで */
 
 .current {
@@ -253,7 +242,7 @@ textarea,
 .question,
 .answer {
     padding: 10px;
-    background-color: lightblue;
+    background-color: rgb(240, 212, 160);
     /* border: solid 1px; */
 }
 
@@ -296,7 +285,7 @@ textarea,
 /* footer */
 
 footer {
-    background-color: lightblue;
+    background-color: rgb(240, 212, 160);
     height: 30px;
     text-align: center;
 }
