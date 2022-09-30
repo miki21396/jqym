@@ -40,9 +40,32 @@ $('.tab-list li').on('click', function () {
     $(target).addClass('current');
 })
 
-$('.pochi').on('click',function () {
-    console.log('#box5');
-})
+// box2　文字色
+$(function () {
+    $('#box2').css('color','#d4b16e');
+});
+
+// // sbtitle
+// const CLASSNAME = "-visible";
+// const TIMEOUT = 2000;
+// const $target = $(".bg");
+
+// setInterval(() => {
+//   $target.addClass(CLASSNAME);
+
+//   setTimeout(() => {
+//     $target.removeClass(CLASSNAME);
+//   }, TIMEOUT);
+// }, TIMEOUT*2);
+
+// foam buttom
+$(function(){
+    $(".pochi").click(function(){
+        alert("thanks for send it!");
+    });
+});
+
+
 
 // Q&A
 
