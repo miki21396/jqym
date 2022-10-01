@@ -1,10 +1,10 @@
 body {
-    font-family: 游明朝体;
+    font-family: '游明朝体', 'ヒラギノ明朝 Pro W3,Hiragino Mincho Pro';
     /* background-image: url(./pic/IMG_0257.JPG); */
     background-attachment: fixed;
 }
 
-header{
+header {
     background-image: url(./pic/IMG_0257.JPG);
     margin-top: 20px;
 }
@@ -150,9 +150,90 @@ h1 {
 #box1 {
     /* home */
     content: 'box1';
+
 }
 
-.title1{
+/* ニュース */
+.news-list {
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+}
+
+.news-list .item a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #CCC;
+    padding: 20px 20px;
+}
+
+.news-list .item:first-child a {
+    border-top: 1px solid #CCC;
+}
+
+.news-list .item .date {
+    margin: 0;
+    min-width: 140px;
+    font-size: 16px;
+    color: #999;
+    padding: 0 20px 0 0;
+}
+
+.news-list .item .category {
+    margin: 0;
+    min-width: 140px;
+    padding: 0 20px 0 0;
+}
+
+.news-list .item .category span {
+    background: #999;
+    color: #FFF;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.news-list .item .title {
+    margin: 0;
+    width: 100%;
+}
+
+.news-list .item a:hover .title {
+    color: rgb(235, 223, 186);
+}
+
+@media screen and (max-width: 767px) {
+    .news-list .item a {
+        flex-wrap: wrap;
+    }
+
+    .news-list .item .date {
+        min-width: 100px;
+    }
+
+    .news-list .item .title {
+        margin-top: 10px;
+    }
+}
+
+/* 装飾 */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.title1 {
     font-family: cursive;
     font-size: 30px;
     font-style: italic;
@@ -165,10 +246,10 @@ h1 {
 
 }
 
-.c-marker{
+.c-marker {
     /* font-family: cursive; */
-font-size: 30px;
-font-style: italic;
+    font-size: 30px;
+    font-style: italic;
 }
 
 /*　マーカー */
@@ -176,24 +257,102 @@ font-style: italic;
     background: -webkit-linear-gradient(left, rgb(235, 223, 186) 50%, transparent 50%);
     background: -moz-linear-gradient(left, rgb(235, 223, 186) 50%, transparent 50%);
     background: linear-gradient(left, rgb(235, 223, 186) 50%, transparent 50%);
-  background-repeat: no-repeat;
-  background-size: 200% .8em; 
+    background-repeat: no-repeat;
+    background-size: 200% .8em;
     background-position: 100% .5em;
     transition: 2s;
 }
-.c-marker.is-active{
+
+.c-marker.is-active {
     background-position: 0% .5em;
 }
+
 /* ここまで */
 
-.anivpic{
-width: 80%;
-height: 50%;
+.anivpic {
+    width: 80%;
+    height: 50%;
 }
 
 #box3 {
     /* room */
+    overflow: auto;
 }
+
+
+/* クラブスイートスライダー */
+.slide-container {
+    display: flex;
+    width: 480px;
+    height: 320px;
+    transition: all 1s ease;
+}
+
+.container-wrap {
+    width: 480px;
+    height: 320px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.left-arrow,
+.right-arrow {
+    cursor: pointer;
+}
+
+.left-arrow {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-bottom: solid 2px #fff;
+    border-right: solid 2px #fff;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 30px;
+    transform: rotate(128deg);
+}
+
+.right-arrow {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-bottom: solid 2px #fff;
+    border-right: solid 2px #fff;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.slide {
+    min-width: 100%;
+    text-align: center;
+    /* font-size: 40px;
+    padding-top: 300px; */
+}
+
+.slide:nth-child(1) {
+    background-image: url(./pic/clubsuite/2022_bs_480_320_01.jpg);
+}
+
+.slide:nth-child(2) {
+    background-image: url(./pic/clubsuite/2022_bs_480_320_02.jpg);
+}
+
+.slide:nth-child(3) {
+    background-image: url(./pic/clubsuite/2022_bs_480_320_03.jpg);
+}
+
+.slide:nth-child(4) {
+    background-image: url(./pic/clubsuite/2022_bs_480_320_04.jpg);
+}
+
+.slide:nth-child(5) {
+    background-image: url(./pic/clubsuite/2022_bs_480_320_05.jpg);
+}
+
 
 #box4 {
     /* contact */
@@ -249,14 +408,22 @@ textarea,
 .current {
     z-index: 1;
     opacity: 1;
-    border: solid black 1px;
+    /* border: solid black 1px; */
 }
 
 
 /* Q&A */
 
+
+
 .qa {
     margin: 20px;
+}
+
+.qatext {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
 }
 
 .question,
@@ -302,10 +469,12 @@ textarea,
 }
 
 
+
+
 /* footer */
 
 footer {
-    background-color: rgb(240, 212, 160);
+    background-image: url(./pic/IMG_0257.JPG);
     height: 30px;
     text-align: center;
 }
