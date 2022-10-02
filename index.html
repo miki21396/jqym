@@ -26,6 +26,29 @@
                     <li id="#box3">Room</li>
                     <li id="#box4">Contact</li>
 
+                    <!-- hamburger menu -->
+                    <nav class="sp-nav">
+                        <ul>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">SERVICE</a></li>
+                            <li><a href="#">COMPANY</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                            <li class="close"><span>閉じる</span></li>
+                        </ul>
+                    </nav>
+
+                    <div id="hamburger">
+                        <span></span>
+                    </div>
+                    <script>
+                        $(function () {
+                            const hum = $('#hamburger, .close')
+                            const nav = $('.sp-nav')
+                            hum.on('click', function () {
+                                nav.toggleClass('toggle');
+                            });
+                        });
+                    </script>
                     <a href="http://google.com"><img src="./pic/twitter.png" class="icons" alt="twitter"></a>
                     <a href="https://www.instagram.com/thebusenaterrace/"><img src="./pic/instagram.png" class="icons"
                             alt="instagram"></a>
@@ -33,7 +56,8 @@
                             alt="youtube"></a>
                     <a href="https://www.facebook.com/busenaterrace"><img src="./pic/facebook.png" class="icons"
                             alt="facebook"></a>
-                    <!-- </div> -->
+
+
                 </ul>
             </ul>
         </nav>
@@ -122,8 +146,9 @@
                         </p>
                     </div>
                     <div class="box" id="box3">
-                        <p>クラブスイート</p>
-                        <section> <!-- クラブスイートスライダー -->
+                        <p class="roomname">クラブスイート</p>
+                        <section>
+                            <!-- クラブスイートスライダー -->
                             <div class="container-wrap">
                                 <span class="left-arrow"></span>
                                 <span class="right-arrow"></span>
@@ -136,44 +161,48 @@
                                 </div>
                             </div>
                         </section>
-                        <div style="background:rgb(240, 212, 160);margin:1em auto;padding:1em;">ノースタワー4階・5階に1室ずつ設えられたコーナースイートルーム。<br>
+                        <div style="background:rgb(240, 212, 160);margin:1em auto;padding:1em;">
+                            ノースタワー4階・5階に1室ずつ設えられたコーナースイートルーム。<br>
                             海に張り出した2面の大きな窓から、青く澄んだ海を一望する絶景をお楽しみいただけます
                         </div>
 
-                        <p>クラブスイート</p>
-                        <section> <!-- クラブスイートスライダー -->
-                            <div class="container-wrap">
-                                <span class="left-arrow"></span>
-                                <span class="right-arrow"></span>
-                                <div class="slide-container">
-                                    <div class="slide"></div>
-                                    <div class="slide"></div>
-                                    <div class="slide"></div>
-                                    <div class="slide"></div>
-                                    <div class="slide"></div>
+                        <p class="roomname">テラススイート</p>
+                        <section>
+                            <!-- テラススイートスライダー -->
+                            <div class="container-wrap1">
+                                <span class="left-arrow1"></span>
+                                <span class="right-arrow1"></span>
+                                <div class="slide-container1">
+                                    <div class="slide1"></div>
+                                    <div class="slide1"></div>
+                                    <div class="slide1"></div>
+                                    <div class="slide1"></div>
+                                    <div class="slide1"></div>
                                 </div>
                             </div>
                         </section>
-                        <div style="background:rgb(240, 212, 160);margin:1em auto;padding:1em;">ノースタワー4階・5階に1室ずつ設えられたコーナースイートルーム。<br>
-                            海に張り出した2面の大きな窓から、青く澄んだ海を一望する絶景をお楽しみいただけます
+                        <div style="background:rgb(240, 212, 160);margin:1em auto;padding:1em;">
+                            セントラルタワー最上階から東シナ海を一望するスイートルーム。<br>
+                            きめ細やかなサービスと壮大なパノラマビューが、極上の時間と空間を演出します。
                         </div>
 
-                        <p>クラブスイート</p>
-                        <section> <!-- クラブスイートスライダー -->
-                            <div class="container-wrap">
-                                <span class="left-arrow"></span>
-                                <span class="right-arrow"></span>
-                                <div class="slide-container">
-                                    <div class="slide"></div>
-                                    <div class="slide"></div>
-                                    <div class="slide"></div>
-                                    <div class="slide"></div>
-                                    <div class="slide"></div>
+                        <p class="roomname">デラックスメゾネット オーシャンフロント</p>
+                        <section>
+                            <!-- デラックスメゾネット オーシャンフロント-->
+                            <div class="container-wrap2">
+                                <span class="left-arrow2"></span>
+                                <span class="right-arrow2"></span>
+                                <div class="slide-container2">
+                                    <div class="slide2"></div>
+                                    <div class="slide2"></div>
+                                    <div class="slide2"></div>
+                                    <div class="slide2"></div>
+                                    <div class="slide2"></div>
                                 </div>
                             </div>
                         </section>
-                        <div style="background:rgb(240, 212, 160);margin:1em auto;padding:1em;">ノースタワー4階・5階に1室ずつ設えられたコーナースイートルーム。<br>
-                            海に張り出した2面の大きな窓から、青く澄んだ海を一望する絶景をお楽しみいただけます
+                        <div style="background:rgb(240, 212, 160);margin:1em auto;padding:1em;">
+                            上階にベッドルームとバスルーム、下階にリビングルームを配置し、テラスの向こうに青く輝く東シナ海を臨むメゾネットルーム。
                         </div>
                     </div>
                     <div class="box" id="box4">

@@ -49,6 +49,43 @@ $('.left-arrow').on('click',function () {
   }
 })
 
+// テラススイートスライダー
+let index1 = 0;
+let slideMax1 = $('.slide1').length
+$('.right-arrow1').on('click',function () {
+  if (index1 !== slideMax1-1) {
+    index1++;
+    num = index1 * -1 * 100;
+    $('.slide-container1').css({'transform':`translateX(${num}%)`});
+  }
+})
+
+$('.left-arrow1').on('click',function () {
+  if (index1 !== 0) {
+    index1--;//左スライドバージョンだからマイナス
+    num = index1 * -1 * 100;
+    $('.slide-container1').css({'transform':`translateX(${num}%)`})
+  }
+})
+
+// テラススイートスライダー
+let index2 = 0;
+let slideMax2 = $('.slide2').length
+$('.right-arrow2').on('click',function () {
+  if (index2 !== slideMax2-1) {
+    index2++;
+    num = index2 * -1 * 100;
+    $('.slide-container2').css({'transform':`translateX(${num}%)`});
+  }
+})
+
+$('.left-arrow2').on('click',function () {
+  if (index2 !== 0) {
+    index2--;//左スライドバージョンだからマイナス
+    num = index2 * -1 * 100;
+    $('.slide-container2').css({'transform':`translateX(${num}%)`})
+  }
+})
 
 // foam buttom
 $(function(){
@@ -65,3 +102,6 @@ $('.question').on('click', function () {
     $(this).next().slideToggle();
     $(this).toggleClass('on');
 })
+
+
+// ハンバーガーメニュー
