@@ -76,7 +76,7 @@ $('.left-arrow1').on('click',function () {
   }
 })
 
-// テラススイートスライダー
+// デラックスメゾネット オーシャンフロント
 let index2 = 0;
 let slideMax2 = $('.slide2').length
 $('.right-arrow2').on('click',function () {
