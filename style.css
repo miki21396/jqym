@@ -251,19 +251,7 @@ h2 {
     color: rgb(235, 223, 186);
 }
 
-@media screen and (max-width: 767px) {
-    .news-list .item a {
-        flex-wrap: wrap;
-    }
 
-    .news-list .item .date {
-        min-width: 100px;
-    }
-
-    .news-list .item .title {
-        margin-top: 10px;
-    }
-}
 
 /* 装飾 */
 
@@ -274,8 +262,6 @@ h2 {
 a {
     text-decoration: none;
 }
-
-
 
 .title1 {
     font-family: cursive;
@@ -321,6 +307,11 @@ a {
 #box3 {
     /* room */
     overflow: auto;
+}
+
+.roomname {
+    font-size: 25px;
+    font-style: italic;
 }
 
 
@@ -397,6 +388,154 @@ a {
     background-image: url(./pic/clubsuite/2022_bs_480_320_05.jpg);
 }
 
+/* terrace suite slider */
+
+
+/* クラブスイートスライダー */
+.slide-container1 {
+    display: flex;
+    width: 480px;
+    height: 320px;
+    transition: all 1s ease;
+}
+
+.container-wrap1 {
+    width: 480px;
+    height: 320px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.left-arrow1,
+.right-arrow1 {
+    cursor: pointer;
+}
+
+.left-arrow1 {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-bottom: solid 2px #fff;
+    border-right: solid 2px #fff;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 30px;
+    transform: rotate(128deg);
+}
+
+.right-arrow1 {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-bottom: solid 2px #fff;
+    border-right: solid 2px #fff;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.slide1 {
+    min-width: 100%;
+    text-align: center;
+    /* font-size: 40px;
+    padding-top: 300px; */
+}
+
+.slide1:nth-child(1) {
+    background-image: url(./pic/terracesuite/b_sa_livingroom_480_320_01.jpg);
+}
+
+.slide1:nth-child(2) {
+    background-image: url(./pic/terracesuite/b_sa_livingroom_480_320_02.jpg);
+}
+
+.slide1:nth-child(3) {
+    background-image: url(./pic/terracesuite/b_sa_livingroom_480_320_03.jpg);
+}
+
+.slide1:nth-child(4) {
+    background-image: url(./pic/terracesuite/b_sa_livingroom_480_320_04.jpg);
+}
+
+.slide1:nth-child(5) {
+    background-image: url(./pic/terracesuite/b_sa_bathroom_480_320_01.jpg);
+}
+
+/* デラックスメゾネット オーシャンフロント */
+.slide-container2 {
+    display: flex;
+    width: 480px;
+    height: 320px;
+    transition: all 1s ease;
+}
+
+.container-wrap2 {
+    width: 480px;
+    height: 320px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.left-arrow2,
+.right-arrow2 {
+    cursor: pointer;
+}
+
+.left-arrow2 {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-bottom: solid 2px #fff;
+    border-right: solid 2px #fff;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 30px;
+    transform: rotate(128deg);
+}
+
+.right-arrow2 {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-bottom: solid 2px #fff;
+    border-right: solid 2px #fff;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.slide2 {
+    min-width: 100%;
+    text-align: center;
+    /* font-size: 40px;
+    padding-top: 300px; */
+}
+
+.slide2:nth-child(1) {
+    background-image: url(./pic/delaxMezonetNatureoceanfront/2022_mgmo_480_320_01.jpg);
+}
+
+.slide2:nth-child(2) {
+    background-image: url(./pic/delaxMezonetNatureoceanfront/2022_mgmo_480_320_02.jpg);
+}
+
+.slide22:nth-child(3) {
+    background-image: url(./pic/delaxMezonetNatureoceanfront/2022_mgmo_480_320_06.jpg);
+}
+
+.slide2:nth-child(4) {
+    background-image: url(./pic/delaxMezonetNatureoceanfront/2022_mgmo_480_320_07.jpg);
+}
+
+.slide2:nth-child(5) {
+    background-image: url(./pic/delaxMezonetNatureoceanfront/2022_mgmo_480_320_08.jpg);
+}
 
 #box4 {
     /* contact */
@@ -521,4 +660,164 @@ footer {
     background-image: url(./pic/IMG_0257.JPG);
     height: 30px;
     text-align: center;
+}
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width: 767px) {
+
+
+    ul {
+        /* font-size: 10px; */
+    }
+
+    /* header */
+
+    .tab-list {
+        display: none;
+    }
+
+    .main-contents {
+        margin: 0;
+    }
+
+    .header {
+        margin-top: 0%;
+    }
+
+    /* hamburger menu */
+    #hamburger {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 25px;
+        margin: 0 0 0 auto;
+    }
+
+    #hamburger span {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transform: translateY(-50%);
+    }
+
+    #hamburger::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+    }
+
+    #hamburger::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+    }
+
+    /* スマホ用メニュー項目 */
+    .sp-nav {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        width: 100%;
+        background: rgba(0, 0, 0, .8);
+        transition: all .2s ease-in-out;
+    }
+
+    .sp-nav ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+     }
+     .sp-nav li {
+        margin: 0;
+        padding: 0;
+     }
+     .sp-nav li span {
+        font-size: 15px;
+        color: #fff;
+     }
+     .sp-nav li a, .sp-nav li span {
+        display: block;
+        padding: 20px 0;
+     }
+
+     /* バツ表示装飾 */
+     /*基準となるli要素*/
+.sp-nav .close {
+    position: relative;
+    padding-left: 20px;
+ }
+ /*バツ印線1*/
+ .sp-nav .close::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate( 45deg );
+ }
+ /*バツ印線2*/
+ .sp-nav .close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate( -45deg );
+ }
+
+    .icons {
+        width: 20px;
+        height: 20px;
+    }
+
+    .main-contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* #home1 */
+    .news-list .item a {
+        flex-wrap: wrap;
+    }
+
+    .news-list .item .date {
+        min-width: 100px;
+    }
+
+    .news-list .item .title {
+        margin-top: 10px;
+    }
+
+    /* footer */
+    small {
+        font-size: 5px;
+    }
 }
