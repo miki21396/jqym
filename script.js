@@ -13,6 +13,14 @@ $(function(){
     $('#datepicker').datepicker();
 });
 
+// Googleマップ
+// $(".tab-list li").on("click", function () {
+//     let target = $(this).attr("id");
+//     $(".bo").removeClass("current");
+//     //   全部の.boxからcurrentを一旦とる
+//     $(target).addClass("current");
+// });
+
 // box2　文字色
 $(function () {
     $('#box2').css('color','#d4b16e');
