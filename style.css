@@ -7,12 +7,16 @@ body {
     /* font-weight: bold; */
     /* background-image: url(./pic/IMG_0257.JPG); */
     background-attachment: fixed;
+
 }
 
 header {
     background-image: url(./pic/IMG_0257.JPG);
     margin-top: 20px;
+
 }
+
+
 
 h1 {
     font-size: 38px;
@@ -55,6 +59,7 @@ ul .tab-list {
 .wrap {
     display: flex;
     overflow: hidden;
+
 }
 
 .slideshow {
@@ -708,7 +713,28 @@ footer {
 
 @media screen and (max-width: 767px) {
 
-    body{
+    h1 {
+        font-size: 25px;
+    }
+
+    .firsticon{
+        width: 22px;
+        height: 22px;
+    }
+
+    ul .tab-list {
+        font-size: 18px;
+    }
+
+    .icons {
+        margin-right: 10px;
+    }
+
+    #box1.box {
+        margin-top: 50px;
+    }
+
+    body {
         /* max-width: fit-content;
         max-height: fit-content; */
     }
@@ -790,9 +816,9 @@ footer {
 
     /* left-menu */
 
-.left-menu{
-    height: auto;
-}
+    .left-menu {
+        height: auto;
+    }
 
     /* #home1 */
     .news-list .item a {
@@ -807,11 +833,12 @@ footer {
         margin-top: 10px;
     }
 
-/* right-menu */
-.right-menu{
-    width: auto;
-    height: auto;
-}
+    /* right-menu */
+    .right-menu {
+        width: auto;
+        height: auto;
+    }
+
     /* google map */
     .map-pc {
         display: none;
