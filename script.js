@@ -14,12 +14,12 @@ $(function(){
 });
 
 // Googleマップ
-// $(".tab-list li").on("click", function () {
-//     let target = $(this).attr("id");
-//     $(".bo").removeClass("current");
-//     //   全部の.boxからcurrentを一旦とる
-//     $(target).addClass("current");
-// });
+$(".tablist li").on("click", function () {
+    let target = $(this).attr("id");
+    $(".bo").removeClass("current");
+    //   全部の.boxからcurrentを一旦とる
+    $(target).addClass("current");
+});
 
 // box2　文字色
 $(function () {
