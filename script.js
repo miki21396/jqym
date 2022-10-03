@@ -113,3 +113,7 @@ $('.question').on('click', function () {
 
 
 // ハンバーガーメニュー
+
+hum.on('click', function(){
+  nav.toggleClass('toggle');
+});

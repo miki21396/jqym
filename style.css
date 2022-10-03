@@ -727,6 +727,11 @@ footer {
         background-color: black;
     }
 
+    .toggle {
+        transform: translateY( 0 );
+        opacity: 1;
+     }
+
     /* スマホ用メニュー項目 */
     .sp-nav {
         z-index: 1;
