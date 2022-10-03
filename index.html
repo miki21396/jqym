@@ -11,8 +11,8 @@
     <script src="https://kit.fontawesome.com/1134e22465.js" crossorigin="anonymous"></script>
     <title>【非公式】ザ•ブセナテラス</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                             alt="youtube"></a>
                     <a href="https://www.facebook.com/busenaterrace"><img src="./pic/facebook.png" class="icons"
                             alt="facebook"></a>
-                        </ul>
+                </ul>
             </ul>
         </nav>
     </header>
@@ -177,7 +177,7 @@
                                     <div class="slide2"></div>
                                     <div class="slide2"></div>
                                     <div class="slide2"></div>
-                            </div>
+                                </div>
                         </section>
                         <div style="background:rgb(235, 223, 186);margin:1em auto;padding:1em;">
                             上階にベッドルームとバスルーム、下階にリビングルームを配置し、テラスの向こうに青く輝く東シナ海を臨むメゾネットルーム。
@@ -267,28 +267,32 @@
 
 
             <div>
-                <section>
+                <!-- PC表示 -->
+                <section class="map-pc">
                     <ul class="tablist">
-                      <li id="#box-1">Google Map</li>
-                      <li id="#box-2">画像で見る</li>
+                        <li id="#box-1">Google Map</li>
+                        <li id="#box-2">画像で見る</li>
                     </ul>
                     <div class="container3">
-                      <div class="bo current" id="box-1">
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1GOi8jAIyXubmQY6q_hJojIVKXaLp9H8&ehbc=2E312F" width="400"
-                          height="300"></iframe>
-                      </div>
-                      <div class="bo" id="box-2">
-                        <img class="access" src="./pic/accessmap_busena.svg" alt="">
-                      </div>
+                        <div class="bo current" id="box-1">
+                            <iframe
+                                src="https://www.google.com/maps/d/embed?mid=1GOi8jAIyXubmQY6q_hJojIVKXaLp9H8&ehbc=2E312F"
+                                width="400" height="300"></iframe>
+                        </div>
+                        <div class="bo" id="box-2">
+                            <img class="access" src="./pic/accessmap_busena.svg" alt="">
+                        </div>
                     </div>
-                  </section>
-                
-                <!-- <h2><i class="fa-solid fa-location-dot"></i>
-                    地図・アクセスマップ
-                </h2>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1GOi8jAIyXubmQY6q_hJojIVKXaLp9H8&ehbc=2E312F"
-                    width="400" height="300"></iframe> -->
+                </section>
 
+                <!-- レスポンシブ -->
+                <div class="map-res">
+                    <h2><i class="fa-solid fa-location-dot"></i>
+                        地図・アクセスマップ
+                    </h2>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1GOi8jAIyXubmQY6q_hJojIVKXaLp9H8&ehbc=2E312F"
+                        width="400" height="300"></iframe>
+                </div>
             </div>
 
 
