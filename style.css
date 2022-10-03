@@ -2,7 +2,7 @@ html { scroll-behavior: smooth;
 }
 
 body {
-    font-family: '游明朝体', 'ヒラギノ明朝 Pro W3,Hiragino Mincho Pro','HG明朝E';
+    font-family: '游明朝体','游明朝','ヒラギノ明朝 Pro W3,Hiragino Mincho Pro','HG明朝E';
     font-weight: bold;
     /* background-image: url(./pic/IMG_0257.JPG); */
     background-attachment: fixed;
