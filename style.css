@@ -4,7 +4,7 @@ html {
 
 body {
     font-family: '游明朝体', '游明朝', 'ヒラギノ明朝 Pro W3,Hiragino Mincho Pro', 'HG明朝E';
-    font-weight: bold;
+    /* font-weight: bold; */
     /* background-image: url(./pic/IMG_0257.JPG); */
     background-attachment: fixed;
 }
@@ -15,7 +15,7 @@ header {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 38px;
     font-weight: bold;
     /* margin: 30px; */
     text-align: center;
@@ -116,24 +116,27 @@ ul .tab-list{
 
 h2 {
     font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(235, 223, 186);
 }
 
-.tablist {
-    display: flex;
+.tab-list {
+    /* display: flex; */
+font-size: 23px;
 }
 
-.tablist li {
+/* .tab-list li {
     padding: 10px;
     background-color: rgb(235, 223, 186);
     border: solid 1px #fff;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-}
-
-.tablist li:hover {
+} */
+/* 
+.tab-list li:hover {
     opacity: 0.7;
     cursor: pointer;
-}
+} */
 
 .container3 {
     position: relative;
@@ -204,7 +207,10 @@ h2 {
 #box1 {
     /* home */
     content: 'box1';
+}
 
+#box1.box{
+    margin-top: 100px;
 }
 
 /* ニュース */
@@ -604,6 +610,24 @@ textarea,
     /* border: solid black 1px; */
 }
 
+/* google map */
+.tablist {
+    display: flex;
+}
+
+.tablist li {
+    padding: 10px;
+    background-color: rgb(235, 223, 186);
+    border: solid 1px #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.tablist li:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
 
 /* Q&A */
 
@@ -622,7 +646,7 @@ textarea,
 .question,
 .answer {
     padding: 10px;
-    background-color: rgb(240, 212, 160);
+    background-color: rgb(235, 223, 186);
     /* border: solid 1px; */
 }
 
