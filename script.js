@@ -111,9 +111,3 @@ $('.question').on('click', function () {
     $(this).toggleClass('on');
 })
 
-
-// ハンバーガーメニュー
-
-hum.on('click', function(){
-  nav.toggleClass('toggle');
-});

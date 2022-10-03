@@ -25,29 +25,8 @@
                     <li id="#box2">About</li>
                     <li id="#box3">Room</li>
                     <li id="#box4">Contact</li>
+                    <a href="#qa">Q&A</a>
 
-                    <!-- hamburger menu -->
-                    <nav class="sp-nav">
-                        <ul>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">SERVICE</a></li>
-                            <li><a href="#">COMPANY</a></li>
-                            <li><a href="#">CONTACT</a></li>
-                            <li class="close"><span>閉じる</span></li>
-                        </ul>
-                    </nav>
-                    <div id="hamburger">
-                        <span></span>
-                    </div>
-                    <script>
-                        $(function () {
-                            const hum = $('#hamburger, .close')
-                            const nav = $('.sp-nav')
-                            hum.on('click', function () {
-                                nav.toggleClass('toggle');
-                            });
-                        });
-                    </script>
                     <a href="http://google.com"><img src="./pic/twitter.png" class="icons" alt="twitter"></a>
                     <a href="https://www.instagram.com/thebusenaterrace/"><img src="./pic/instagram.png" class="icons"
                             alt="instagram"></a>
@@ -318,7 +297,7 @@
     </div>
 
     <section>
-        <ul class="qa">
+        <ul id="qa">
             <p class="qatext">よくある質問</p>
             <li class="question">Q.アクセス方法は？</li>
             <li class="answer">A.多分那覇空港からバスで10分</li>
