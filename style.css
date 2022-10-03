@@ -2,7 +2,7 @@ html { scroll-behavior: smooth;
 }
 
 body {
-    font-family: '游明朝体', 'ヒラギノ明朝 Pro W3,Hiragino Mincho Pro';
+    font-family: '游明朝体', 'ヒラギノ明朝 Pro W3,Hiragino Mincho Pro', 'Courier New', Courier, monospace;
     /* background-image: url(./pic/IMG_0257.JPG); */
     background-attachment: fixed;
 }
@@ -696,7 +696,7 @@ footer {
     }
 
     /* スマホ用メニュー項目 */
-    .sp-nav {
+    /* .sp-nav {
         z-index: 1;
         position: fixed;
         top: 0;
@@ -734,38 +734,7 @@ footer {
         padding: 20px 0;
     }
 
-    /* バツ表示装飾 */
-    /*基準となるli要素*/
-    .sp-nav .close {
-        position: relative;
-        padding-left: 20px;
-    }
-
-    /*バツ印線1*/
-    .sp-nav .close::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 0;
-        display: block;
-        width: 16px;
-        height: 1px;
-        background: #fff;
-        transform: rotate(45deg);
-    }
-
-    /*バツ印線2*/
-    .sp-nav .close::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 0;
-        display: block;
-        width: 16px;
-        height: 1px;
-        background: #fff;
-        transform: rotate(-45deg);
-    }
+     */
 
     .icons {
         width: 20px;
