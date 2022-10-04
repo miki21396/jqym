@@ -42,7 +42,10 @@ h1 {
 
 ul .tab-list {
     font-family: 'Dancing Script', cursive;
+}
 
+#boxbox{
+    display: none;
 }
 
 /* アイコンサイズ変更 */
@@ -755,9 +758,9 @@ footer {
         height: auto;
     }
 
-    /* li #box1{
-        display: none;
-    } */
+    #boxbox{
+        display: block;
+    }
 
     h1 {
         font-size: 25px;
