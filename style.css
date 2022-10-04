@@ -701,7 +701,7 @@ textarea,
 
 
 
-/* footer */
+/* フッター */
 
 footer {
     background-image: url(./pic/IMG_0257.JPG);
@@ -709,25 +709,53 @@ footer {
     text-align: center;
 }
 
-/* レスポンシブ対応 */
+/* レスポンシブ対応ここから */
 
 @media screen and (max-width: 767px) {
+
+    body {
+        width: 100wh;
+    }
+
+    .header-menu {
+        position: fixed;
+        /* ヘッダーを固定する */
+        top: 0;
+        /* 上部から配置の基準位置を決める */
+        left: 0;
+        /* 左から配置の基準位置を決める */
+        width: 100%;
+        /* ヘッダーの横幅を指定する */
+        margin: 0%;
+
+        z-index: 2;
+        /* 表示を最上部にする */
+
+        /* height: 35px; */
+        /* ヘッダーの高さを指定する */
+        padding: 10px;
+        /* ヘッダーの余白を指定する(上下左右) */
+        background-image: url(./pic/IMG_0257.JPG);
+        /* ヘッダーの背景色を指定する */
+    }
 
     h1 {
         font-size: 25px;
     }
 
-    .firsticon{
+    .wrap {
+        margin-top: 75px;
+    }
+
+    .firsticon {
         width: 22px;
         height: 22px;
     }
 
-    ul .tab-list {
-        font-size: 18px;
-    }
-
     .icons {
-        margin-right: 10px;
+        margin-right: 15px;
+        /* width: 20px;
+        height: 20px; */
     }
 
     #box1.box {
@@ -743,10 +771,12 @@ footer {
         /* font-size: 10px; */
     }
 
-    /* header */
+    /* ヘッダー */
 
     .tab-list {
         /* display: none; */
+        margin: auto 5%;
+        font-size: 15px;
     }
 
     .main-contents {
@@ -763,47 +793,6 @@ footer {
         opacity: 1;
     }
 
-    /* スマホ用メニュー項目 */
-    /* .sp-nav {
-        z-index: 1;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        display: block;
-        width: 100%;
-        background: rgba(0, 0, 0, .8);
-        transition: all .2s ease-in-out;
-    }
-
-    .sp-nav ul {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    .sp-nav li {
-        margin: 0;
-        padding: 0;
-    }
-
-    .sp-nav li span {
-        font-size: 15px;
-        color: #fff;
-    }
-
-    .sp-nav li a,
-    .sp-nav li span {
-        display: block;
-        padding: 20px 0;
-    }
-
-     */
-
     .icons {
         width: 20px;
         height: 20px;
@@ -814,10 +803,11 @@ footer {
         align-items: center;
     }
 
-    /* left-menu */
+    /* 左メニュー */
 
     .left-menu {
         height: auto;
+        width: -webkit-fill-available;
     }
 
     /* #home1 */
@@ -833,13 +823,18 @@ footer {
         margin-top: 10px;
     }
 
-    /* right-menu */
+/* #home3 */
+#box{
+    width: 100%;
+}
+
+    /* 右メニュー */
     .right-menu {
         width: auto;
         height: auto;
     }
 
-    /* google map */
+    /* Googleマップ*/
     .map-pc {
         display: none;
     }
