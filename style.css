@@ -16,7 +16,7 @@ header {
 }
 
 
-.homeicon{
+.homeicon {
     width: 25px;
     height: 25px;
     display: none;
@@ -338,6 +338,9 @@ a {
     font-style: italic;
 }
 
+section{
+    align-items: center;
+}
 
 /* クラブスイートスライダー */
 .slide-container {
@@ -743,15 +746,15 @@ footer {
         /* ヘッダーの背景色を指定する */
     }
 
-    .hometext{
-display: none;
+    .hometext {
+        display: none;
     }
 
-    .homeicon{
+    .homeicon {
         display: block;
         height: auto;
     }
-    
+
     /* li #box1{
         display: none;
     } */
@@ -840,15 +843,34 @@ display: none;
         margin-top: 10px;
     }
 
-/* #home3 */
-#box{
-    width: 100%;
-}
+    /* #3 */
+    /* #box {
+        width: 100%;
+    } */
+
+    .container-wrap {
+        width: 350px;
+        height: 240px;
+    }
+
+    .container-wrap1 {
+        width: 350px;
+        height: 240px;
+    }
+
+    .container-wrap2 {
+        width: 350px;
+        height: 240px;
+    }
 
     /* 右メニュー */
     .right-menu {
         width: auto;
         height: auto;
+    }
+
+    h2 {
+        text-align: center;
     }
 
     /* Googleマップ*/
@@ -858,6 +880,13 @@ display: none;
 
     .map-res {
         display: block;
+    }
+
+    .qatext {
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(235, 223, 186);
+        text-align: center;
     }
 
     /* footer */
