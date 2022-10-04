@@ -44,7 +44,7 @@ ul .tab-list {
     font-family: 'Dancing Script', cursive;
 }
 
-#boxbox{
+#boxbox {
     display: none;
 }
 
@@ -341,7 +341,7 @@ a {
     font-style: italic;
 }
 
-section{
+section {
     align-items: center;
 }
 
@@ -758,8 +758,10 @@ footer {
         height: auto;
     }
 
-    #boxbox{
+    #boxbox {
         display: block;
+        padding-top: 70px;
+        margin-top: -70px;
     }
 
     h1 {
