@@ -23,11 +23,11 @@
             <h1><img class="firsticon" src="./pic/shell.png"> BUSENA TERRACE </h1>
             <nav>
                 <ul class="tab-list">
-                    <li id="#box1"><a name="#main-contents">Home</a></li>
-                    <li id="#box2"><a name="#main-contents">About</a></li>
-                    <li id="#box3"><a name="#main-contents">Room</a></li>
-                    <li id="#box4"><a name="#main-contents">Contact</a></li>
-                    <li><a name="#qa">Q&A</a></li>
+                    <li id="#box1"><a href="#boxbox"></a><img class="homeicon" src="./pic/home-icon-silhouette.png" alt=""><p class="hometext">Home</p></li>
+                    <li id="#box2"><a href="#boxbox"></a>About</li>
+                    <li id="#box3"><a href="#boxbox"></a>Room</li>
+                    <li id="#box4"><a href="#boxbox"></a>Contact</li>
+                    <li><a href="#qa">Q&A</a></li>
 
                     <a href="http://google.com"><img src="./pic/twitter.png" class="icons" alt="twitter"></a>
                     <a href="https://www.instagram.com/thebusenaterrace/"><img src="./pic/instagram.png" class="icons"
@@ -66,6 +66,7 @@
             <div class="left-menu">
                 <section>
                     <div class="container">
+                        <a id="boxbox"></a>
                         <div class="box current" id="box1">
                             <!-- <p> -->
                             <p class="title1">Pick up menu</p><br>
@@ -110,6 +111,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <a id="boxbox"></a>
                         <div class="box" id="box2">
                             <p class="text1">
 
@@ -124,6 +126,7 @@
                                 <img class="anivpic" src="./pic/25th_top_busena_1600x990.jpeg" alt="25thpic">
                             </p>
                         </div>
+                        <a id="boxbox"></a>
                         <div class="box" id="box3">
                             <p class="roomname">クラブスイート</p>
                             <section>
@@ -183,6 +186,7 @@
                                 上階にベッドルームとバスルーム、下階にリビングルームを配置し、テラスの向こうに青く輝く東シナ海を臨むメゾネットルーム。
                             </div>
                         </div>
+                        <a id="boxbox"></a>
                         <div class="box" id="box4">
                             <p><br>ご予約以外のお問い合わせはこちらから<br>※返信までに２〜３営業日いただいております。</p>
                             <section4 class="form">
@@ -217,96 +221,97 @@
                     </div>
                 </section>
             </div>
-    </ul>
+            </ul>
 
-    <!-- right-menu -->
-    <div class="right-menu">
-        <div>
-            <h2><i class="fa-solid fa-hotel"></i>
-                宿泊予約
-            </h2>
-        </div>
-        <div class="check">
-            <span>チェックイン日</span>
-            <i class="fa-regular fa-calendar-days"></i>
-            <input type="text" id="datepicker">
-        </div>
+            <!-- right-menu -->
+            <div class="right-menu">
+                <div>
+                    <h2><i class="fa-solid fa-hotel"></i>
+                        宿泊予約
+                    </h2>
+                </div>
+                <div class="check">
+                    <span>チェックイン日</span>
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <input type="text" id="datepicker">
+                </div>
 
-        <div class="lodging">
-            <span>泊数</span>
-            <select class="dropdown">
-                <option>1泊▼</option>
-                <option>2泊</option>
-                <option>3泊</option>
-                <option>4泊</option>
-                <option>5泊</option>
-            </select>
-        </div>
+                <div class="lodging">
+                    <span>泊数</span>
+                    <select class="dropdown">
+                        <option>1泊▼</option>
+                        <option>2泊</option>
+                        <option>3泊</option>
+                        <option>4泊</option>
+                        <option>5泊</option>
+                    </select>
+                </div>
 
-        <div class="room">
-            <span>部屋数</span>
-            <select class="dropdown">
-                <option>1部屋▼</option>
-                <option>2部屋</option>
-                <option>3部屋</option>
-            </select>
-        </div>
+                <div class="room">
+                    <span>部屋数</span>
+                    <select class="dropdown">
+                        <option>1部屋▼</option>
+                        <option>2部屋</option>
+                        <option>3部屋</option>
+                    </select>
+                </div>
 
-        <div class="people">
-            <span>人数（１部屋あたり）</span>
-            <select class="dropdown">
-                <option>1人▼</option>
-                <option>2人</option>
-                <option>3人</option>
-            </select>
-        </div>
+                <div class="people">
+                    <span>人数（１部屋あたり）</span>
+                    <select class="dropdown">
+                        <option>1人▼</option>
+                        <option>2人</option>
+                        <option>3人</option>
+                    </select>
+                </div>
 
-        <input class="pochi" type="button" value="検索">
-        <p>※6歳以上のお子様は大人と同じ料金となりますので、<br>「人数」に含めてご入力ください。
-            <br>【12歳まで添寝無料】ファミリープランもご用意しております。<br><br>
-        </p>
+                <input class="pochi" type="button" value="検索">
+                <p>※6歳以上のお子様は大人と同じ料金となりますので、<br>「人数」に含めてご入力ください。
+                    <br>【12歳まで添寝無料】ファミリープランもご用意しております。<br><br>
+                </p>
 
 
-        <div>
-            <!-- PC表示 -->
-            <section class="map-pc">
-                <ul class="tablist">
-                    <li id="#box-1">Google Map</li>
-                    <li id="#box-2">画像で見る</li>
-                </ul>
-                <div class="container3">
-                    <div class="bo current" id="box-1">
+                <div>
+                    <!-- PC表示 -->
+                    <section class="map-pc">
+                        <ul class="tablist">
+                            <li id="#box-1">Google Map</li>
+                            <li id="#box-2">画像で見る</li>
+                        </ul>
+                        <div class="container3">
+                            <div class="bo current" id="box-1">
+                                <iframe
+                                    src="https://www.google.com/maps/d/embed?mid=1GOi8jAIyXubmQY6q_hJojIVKXaLp9H8&ehbc=2E312F"
+                                    width="400" height="300"></iframe>
+                            </div>
+                            <div class="bo" id="box-2">
+                                <img class="access" src="./pic/accessmap_busena.svg" alt="">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- レスポンシブ -->
+                    <div class="map-res">
+                        <h2><i class="fa-solid fa-location-dot"></i>
+                            地図・アクセスマップ
+                        </h2>
                         <iframe
                             src="https://www.google.com/maps/d/embed?mid=1GOi8jAIyXubmQY6q_hJojIVKXaLp9H8&ehbc=2E312F"
                             width="400" height="300"></iframe>
                     </div>
-                    <div class="bo" id="box-2">
-                        <img class="access" src="./pic/accessmap_busena.svg" alt="">
-                    </div>
                 </div>
-            </section>
 
-            <!-- レスポンシブ -->
-            <div class="map-res">
-                <h2><i class="fa-solid fa-location-dot"></i>
-                    地図・アクセスマップ
-                </h2>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1GOi8jAIyXubmQY6q_hJojIVKXaLp9H8&ehbc=2E312F"
-                    width="400" height="300"></iframe>
+
+
+
+
+
             </div>
+
         </div>
 
-
-
-
-
-
-    </div>
-
-    </div>
-
-    <section>
-        <a href="#qa">
+        <section>
+            <a id="qa"></a>
             <p class="qatext"><img class="firsticon" src="./pic/qa.png">よくある質問</p>
             <li class="question">Q.アクセス方法は？</li>
             <li class="answer">A.多分那覇空港からバスで10分</li>
@@ -317,16 +322,15 @@
             <li class="answer">A.we have a lot of activities so let you check here ⇨link</li>
             <li class="question">Q.what time can we check-in</li>
             <li class="answer">A.from 4 p.m.</li>
-        </a>
-    </section>
-    <!-- footer -->
-    <footer><small> &copy; THE TERRACE HOTELS CO.,LTD. All Rights Reserved.</small> </footer>
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        </section>
+        <!-- footer -->
+        <footer><small> &copy; THE TERRACE HOTELS CO.,LTD. All Rights Reserved.</small> </footer>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
-    <script src="./script.js"></script>
+        <script src="./script.js"></script>
 </body>
 
 </html>

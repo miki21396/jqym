@@ -13,10 +13,14 @@ body {
 header {
     background-image: url(./pic/IMG_0257.JPG);
     margin-top: 20px;
-
 }
 
 
+.homeicon{
+    width: 25px;
+    height: 25px;
+    display: none;
+}
 
 h1 {
     font-size: 38px;
@@ -34,7 +38,6 @@ h1 {
 .header-menu {
     text-align: center;
     margin: 20px;
-
 }
 
 ul .tab-list {
@@ -44,8 +47,8 @@ ul .tab-list {
 
 /* アイコンサイズ変更 */
 .icons {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin-left: 5px;
 }
 
@@ -653,6 +656,7 @@ textarea,
     text-align: center;
     font-size: 20px;
     margin: 25px auto;
+    font-weight: bold;
 }
 
 .question,
@@ -738,6 +742,19 @@ footer {
         background-image: url(./pic/IMG_0257.JPG);
         /* ヘッダーの背景色を指定する */
     }
+
+    .hometext{
+display: none;
+    }
+
+    .homeicon{
+        display: block;
+        height: auto;
+    }
+    
+    /* li #box1{
+        display: none;
+    } */
 
     h1 {
         font-size: 25px;
