@@ -14,6 +14,22 @@ $(function(){
 });
 
 // Googleマップ
+
+// マップの拡大縮小の制御
+$(function () {
+    var map = $('iframe');
+    //あらかじめiframeにpointer-events:noneを掛け、マウスイベントを無効にしておく
+    map.css('pointer-events', 'none');
+    //一度クリックされたらマウスイベントを有効にする 
+    $('.container3').click(function () {
+        map.css('pointer-events', 'auto');
+    });
+    //iframeからマウスが離れたら再度pointer-events:noneを効かせる 
+    map.mouseout(function () {
+        map.css('pointer-events', 'none');
+    });
+})
+
 $(".tablist li").on("click", function () {
     let target = $(this).attr("id");
     $(".bo").removeClass("current");

@@ -879,13 +879,13 @@ footer {
     }
 
     /* Googleマップ*/
-    .map-pc {
+    /* .map-pc {
         display: none;
     }
 
     .map-res {
         display: block;
-    }
+    } */
 
     .qatext {
         font-size: 20px;
